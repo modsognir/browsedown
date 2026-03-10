@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Browsedown::Engine["docs"] => "/docs"
+  mount Browsedown["docs"] => "/docs"
 end
