@@ -4,6 +4,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Jared"]
   spec.summary = "Browse markdown files in your browser"
   spec.description = "A Rails engine that serves and renders markdown files from a directory tree."
+  spec.homepage = "https://github.com/modsognir/browsedown"
   spec.license = "MIT"
 
   spec.required_ruby_version = ">= 3.0"
