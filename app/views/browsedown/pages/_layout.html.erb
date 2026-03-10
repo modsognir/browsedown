@@ -2,17 +2,21 @@
 <div class="browsedown">
   <nav class="browsedown-sidebar">
     <h2><a href="<%= browsedown.root_path %>">Contents</a></h2>
-    <ul>
-      <% pages.each_with_index do |page, i| %>
-        <li>
-          <a href="<%= browsedown.page_path(path: page.relative_path.delete_suffix('.md')) %>"
-             class="<%= 'active' if defined?(current_page) && current_page&.relative_path == page.relative_path %>"
-             style="animation-delay: <%= (i * 0.04) + 0.2 %>s">
-            <%= page.title %>
-          </a>
-        </li>
+    <% pages.group_by(&:section).each do |section, group| %>
+      <% if section %>
+        <h3><%= section %></h3>
       <% end %>
-    </ul>
+      <ul>
+        <% group.each do |pg| %>
+          <li>
+            <a href="<%= browsedown.page_path(path: pg.relative_path.delete_suffix('.md')) %>"
+               class="<%= 'active' if defined?(current_page) && current_page&.relative_path == pg.relative_path %>">
+              <%= pg.title %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
   </nav>
   <main class="browsedown-content">
     <%= yield %>

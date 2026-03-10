@@ -1,6 +1,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
   :root {
     --bd-bg: #faf6f1;
@@ -76,12 +76,6 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    animation: bd-sidebar-in 0.5s ease-out both;
-  }
-
-  @keyframes bd-sidebar-in {
-    from { opacity: 0; transform: translateX(-12px); }
-    to   { opacity: 1; transform: translateX(0); }
   }
 
   .browsedown-sidebar::-webkit-scrollbar { width: 4px; }
@@ -118,8 +112,7 @@
   }
 
   .browsedown-sidebar a {
-    animation: bd-nav-item-in 0.35s ease-out both;
-    font-family: 'Newsreader', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.88rem;
     font-weight: 400;
     color: var(--bd-text-muted);
@@ -132,11 +125,6 @@
     line-height: 1.4;
   }
 
-  @keyframes bd-nav-item-in {
-    from { opacity: 0; transform: translateX(-6px); }
-    to   { opacity: 1; transform: translateX(0); }
-  }
-
   .browsedown-sidebar a:hover {
     color: var(--bd-text);
     border-left-color: var(--bd-sidebar-border);
@@ -147,6 +135,20 @@
     .browsedown-sidebar a:hover {
       background: rgba(255,255,255,0.03);
     }
+  }
+
+  .browsedown-sidebar h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bd-text-muted);
+    margin: 1.25rem 0 0.35rem 0.75rem;
+  }
+
+  .browsedown-sidebar h3:first-of-type {
+    margin-top: 0;
   }
 
   .browsedown-sidebar a.active {
@@ -162,16 +164,10 @@
     max-width: 72ch;
     margin: 0 auto;
     padding: 4rem 2rem 6rem;
-    font-family: 'Newsreader', serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.78;
-    animation: bd-content-in 0.6s ease-out 0.1s both;
-  }
-
-  @keyframes bd-content-in {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
   }
 
   /* ---- Typography ---- */
@@ -377,7 +373,7 @@
   .browsedown-empty {
     color: var(--bd-text-muted);
     font-style: italic;
-    font-family: 'Newsreader', serif;
+    font-family: 'Inter', sans-serif;
   }
 
   /* ---- Responsive ---- */
@@ -407,6 +403,11 @@
       border-left: none;
       border-bottom: 2px solid transparent;
       padding: 0.3rem 0.6rem;
+    }
+
+    .browsedown-sidebar h3 {
+      width: 100%;
+      margin: 0.75rem 0 0.25rem 0;
     }
 
     .browsedown-sidebar a.active {

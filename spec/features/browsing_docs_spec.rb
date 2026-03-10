@@ -31,6 +31,15 @@ RSpec.describe "Browsing documentation", type: :feature do
     expect(active_link.text).to eq("Getting Started")
   end
 
+  it "groups sidebar pages by directory" do
+    visit "/docs"
+
+    within(".browsedown-sidebar") do
+      expect(page).to have_css("h3", text: "Guides")
+      expect(page).not_to have_css("h3", text: ".")
+    end
+  end
+
   it "navigates from index to a doc page" do
     visit "/docs"
     click_link "Getting Started"

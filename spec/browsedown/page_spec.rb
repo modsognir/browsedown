@@ -17,6 +17,10 @@ RSpec.describe Browsedown::Page do
     it "stores the relative path" do
       expect(subject.relative_path).to eq("README.md")
     end
+
+    it "has no section for root-level files" do
+      expect(subject.section).to be_nil
+    end
   end
 
   describe "nested file" do
@@ -24,6 +28,10 @@ RSpec.describe Browsedown::Page do
 
     it "extracts title" do
       expect(subject.title).to eq("Getting Started")
+    end
+
+    it "returns the directory as section" do
+      expect(subject.section).to eq("Guides")
     end
 
     it "renders code blocks" do
