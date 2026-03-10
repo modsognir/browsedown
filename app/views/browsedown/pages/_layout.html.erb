@@ -1,0 +1,19 @@
+<%= render "browsedown/pages/style" %>
+<div class="browsedown">
+  <nav class="browsedown-sidebar">
+    <h2><a href="<%= browsedown.root_path %>">Docs</a></h2>
+    <ul>
+      <% pages.each do |page| %>
+        <li>
+          <a href="<%= browsedown.page_path(path: page.relative_path.delete_suffix('.md')) %>"
+             class="<%= 'active' if defined?(current_page) && current_page&.relative_path == page.relative_path %>">
+            <%= page.title %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+  <main class="browsedown-content">
+    <%= yield %>
+  </main>
+</div>

@@ -1,0 +1,141 @@
+<style>
+  :root {
+    --bd-bg: #fff;
+    --bd-text: #1a1a1a;
+    --bd-sidebar-bg: #f5f5f5;
+    --bd-border: #e0e0e0;
+    --bd-link: #0055aa;
+    --bd-link-active: #003366;
+    --bd-code-bg: #f0f0f0;
+    --bd-pre-bg: #f8f8f8;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bd-bg: #1a1a1a;
+      --bd-text: #e0e0e0;
+      --bd-sidebar-bg: #141414;
+      --bd-border: #333;
+      --bd-link: #6cb4ee;
+      --bd-link-active: #a0d0ff;
+      --bd-code-bg: #2a2a2a;
+      --bd-pre-bg: #222;
+    }
+  }
+
+  .browsedown {
+    display: flex;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--bd-text);
+    background: var(--bd-bg);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .browsedown-sidebar {
+    width: 260px;
+    min-width: 260px;
+    background: var(--bd-sidebar-bg);
+    border-right: 1px solid var(--bd-border);
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+  }
+
+  .browsedown-sidebar h2 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+  }
+
+  .browsedown-sidebar h2 a {
+    color: var(--bd-text);
+    text-decoration: none;
+  }
+
+  .browsedown-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .browsedown-sidebar li {
+    margin: 0.25rem 0;
+  }
+
+  .browsedown-sidebar a {
+    color: var(--bd-link);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  .browsedown-sidebar a:hover {
+    background: var(--bd-border);
+  }
+
+  .browsedown-sidebar a.active {
+    color: var(--bd-link-active);
+    font-weight: 600;
+    background: var(--bd-border);
+  }
+
+  .browsedown-content {
+    flex: 1;
+    padding: 2rem 3rem;
+    max-width: 860px;
+  }
+
+  .browsedown-content h1 { font-size: 1.8rem; margin-top: 0; }
+  .browsedown-content h2 { font-size: 1.4rem; margin-top: 2rem; }
+  .browsedown-content h3 { font-size: 1.15rem; margin-top: 1.5rem; }
+
+  .browsedown-content code {
+    background: var(--bd-code-bg);
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  .browsedown-content pre {
+    background: var(--bd-pre-bg);
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+
+  .browsedown-content pre code {
+    background: none;
+    padding: 0;
+  }
+
+  .browsedown-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .browsedown-content th, .browsedown-content td {
+    border: 1px solid var(--bd-border);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+
+  .browsedown-content th {
+    background: var(--bd-sidebar-bg);
+  }
+
+  .browsedown-content a {
+    color: var(--bd-link);
+  }
+
+  .browsedown-content img {
+    max-width: 100%;
+  }
+
+  .browsedown-empty {
+    color: #888;
+    font-style: italic;
+  }
+</style>

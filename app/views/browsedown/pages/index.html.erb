@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Documentation</title></head>
+<body style="margin:0">
+<%= render "browsedown/pages/layout", pages: @pages, current_page: nil do %>
+  <% if @readme %>
+    <%= @readme.html.html_safe %>
+  <% else %>
+    <h1>Documentation</h1>
+    <% if @pages.empty? %>
+      <p class="browsedown-empty">No markdown files found.</p>
+    <% else %>
+      <p>Select a page from the sidebar.</p>
+    <% end %>
+  <% end %>
+<% end %>
+</body>
+</html>

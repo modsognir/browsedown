@@ -1,0 +1,15 @@
+ENV["RAILS_ENV"] = "test"
+
+require_relative "dummy/config/application"
+Dummy::Application.initialize!
+
+require "rspec/rails"
+require "capybara/rspec"
+
+Capybara.app = Dummy::Application
+
+RSpec.configure do |config|
+  config.expect_with :rspec do |expectations|
+    expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+  end
+end

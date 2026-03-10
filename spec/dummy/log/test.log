@@ -1,0 +1,108 @@
+Started GET "/docs" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#index as HTML
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 2.3ms | GC: 0.6ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb (Duration: 3.0ms | GC: 0.6ms)
+Completed 200 OK in 21ms (Views: 5.7ms | GC: 10.4ms)
+Started GET "/docs" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#index as HTML
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | GC: 0.0ms)
+Started GET "/docs/guides/getting-started" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "guides/getting-started"}
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | GC: 0.0ms)
+Started GET "/docs/guides/getting-started" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "guides/getting-started"}
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | GC: 0.0ms)
+Started GET "/docs" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#index as HTML
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | GC: 0.0ms)
+Started GET "/docs/guides/getting-started" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "guides/getting-started"}
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 0ms (Views: 0.3ms | GC: 0.0ms)
+Started GET "/docs/nonexistent" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "nonexistent"}
+rescue_from handled ActionController::RoutingError (Not Found) - /Users/jared/mod/browsedown/app/controllers/browsedown/pages_controller.rb:21:in 'Browsedown::PagesController#show'
+Completed 404 Not Found in 0ms (GC: 0.0ms)
+Started GET "/docs/..%2F..%2Fetc%2Fpasswd" for 127.0.0.1 at 2026-03-10 10:28:18 +0300
+Processing by Browsedown::PagesController#show as */*
+  Parameters: {"path" => "../."}
+rescue_from handled ActionController::RoutingError (Not Found) - /Users/jared/mod/browsedown/app/controllers/browsedown/pages_controller.rb:16:in 'Browsedown::PagesController#show'
+Completed 404 Not Found in 0ms (GC: 0.0ms)
+Started GET "/docs" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#index as HTML
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 1.8ms | GC: 0.5ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb (Duration: 2.2ms | GC: 0.5ms)
+Completed 200 OK in 18ms (Views: 4.1ms | GC: 10.8ms)
+Started GET "/docs" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#index as HTML
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | GC: 0.0ms)
+Started GET "/docs/guides/getting-started" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "guides/getting-started"}
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 1.1ms | GC: 0.5ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb (Duration: 2.5ms | GC: 0.5ms)
+Completed 200 OK in 4ms (Views: 2.9ms | GC: 0.5ms)
+Started GET "/docs/guides/getting-started" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "guides/getting-started"}
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 2.9ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.4ms | GC: 0.0ms)
+Started GET "/docs" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#index as HTML
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 1.4ms | GC: 0.7ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/index.html.erb (Duration: 1.6ms | GC: 0.7ms)
+Completed 200 OK in 3ms (Views: 2.3ms | GC: 0.7ms)
+Started GET "/docs/guides/getting-started" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "guides/getting-started"}
+  Rendering /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_style.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/_layout.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered /Users/jared/mod/browsedown/app/views/browsedown/pages/show.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | GC: 0.0ms)
+Started GET "/docs/nonexistent" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#show as HTML
+  Parameters: {"path" => "nonexistent"}
+Completed 404 Not Found in 0ms (GC: 0.0ms)
+Started GET "/docs/..%2F..%2Fetc%2Fpasswd" for 127.0.0.1 at 2026-03-10 10:29:45 +0300
+Processing by Browsedown::PagesController#show as */*
+  Parameters: {"path" => "../."}
+Completed 404 Not Found in 0ms (GC: 0.0ms)
