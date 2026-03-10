@@ -28,7 +28,7 @@ module Browsedown
     end
 
     def docs_root
-      @docs_root ||= File.join(Rails.root, Browsedown::Engine.root_path)
+      @docs_root ||= Rails.root.join(Browsedown::Engine.root_path).to_s
     end
   end
 end
