@@ -4,6 +4,10 @@ A Rails engine that serves a directory of markdown files as a browsable document
 
 Point it at a folder, mount it in your routes, and your `.md` files become readable in the browser.
 
+![Light mode](screenshots/light-page.png)
+
+![Dark mode](screenshots/dark-page.png)
+
 ## Installation
 
 Add to your Gemfile:
@@ -32,9 +36,10 @@ Browsedown["content/guides"]  # => Rails.root/content/guides
 
 - Scans the directory tree for `*.md` files
 - Renders markdown to HTML using Redcarpet (fenced code blocks, tables, autolinks, strikethrough)
-- Displays a sidebar with links to every page
+- Groups pages by directory in the sidebar
 - Shows `README.md` as the landing page if one exists
-- requests outside the configured root return 404
+- Requests outside the configured root return 404
+- Dark and light mode via `prefers-color-scheme`
 
 ## Requirements
 
